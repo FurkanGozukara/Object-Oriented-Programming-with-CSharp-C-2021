@@ -1,11 +1,7 @@
-C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console\bin\Debug\net5.0\lecture 2 console.exe
 C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console\bin\Debug\net5.0\lecture 2 console.deps.json
-C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console\bin\Debug\net5.0\lecture 2 console.runtimeconfig.json
-C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console\bin\Debug\net5.0\lecture 2 console.runtimeconfig.dev.json
 C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console\bin\Debug\net5.0\lecture 2 console.dll
 C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console\bin\Debug\net5.0\ref\lecture 2 console.dll
 C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console\bin\Debug\net5.0\lecture 2 console.pdb
-C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console\obj\Debug\net5.0\lecture 2 console.csproj.AssemblyReference.cache
 C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console\obj\Debug\net5.0\lecture 2 console.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console\obj\Debug\net5.0\lecture 2 console.AssemblyInfoInputs.cache
 C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console\obj\Debug\net5.0\lecture 2 console.AssemblyInfo.cs
@@ -13,4 +9,8 @@ C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console\obj\De
 C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console\obj\Debug\net5.0\lecture 2 console.dll
 C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console\obj\Debug\net5.0\ref\lecture 2 console.dll
 C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console\obj\Debug\net5.0\lecture 2 console.pdb
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console\bin\Debug\net5.0\lecture 2 console.exe
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console\bin\Debug\net5.0\lecture 2 console.runtimeconfig.json
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console\bin\Debug\net5.0\lecture 2 console.runtimeconfig.dev.json
 C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console\obj\Debug\net5.0\lecture 2 console.genruntimeconfig.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console\bin\Debug\net5.0\TextFile1.txt

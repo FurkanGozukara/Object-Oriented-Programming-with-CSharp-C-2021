@@ -70,5 +70,20 @@ namespace lecture_2_console
         {
             return _irProp2 + _irProp3 + _irProp4;
         }
+
+        protected  int returnSumofPrivateValues_protected()
+        {
+            return _irProp2 + _irProp3 + _irProp4;
+        }
+
+        internal int returnSumofPrivateValues_internal()
+        {
+            return _irProp2 + _irProp3 + _irProp4;
+        }
+
+        public int returnSumofPrivateValues2()
+        {
+            return _irProp2 + _irProp3 + _irProp4;
+        }
     }
 }

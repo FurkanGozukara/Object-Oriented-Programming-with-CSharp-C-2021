@@ -1,0 +1,19 @@
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console dll ex\bin\Debug\net5.0\lecture 2 console dll ex.exe
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console dll ex\bin\Debug\net5.0\lecture 2 console dll ex.deps.json
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console dll ex\bin\Debug\net5.0\lecture 2 console dll ex.runtimeconfig.json
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console dll ex\bin\Debug\net5.0\lecture 2 console dll ex.runtimeconfig.dev.json
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console dll ex\bin\Debug\net5.0\lecture 2 console dll ex.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console dll ex\bin\Debug\net5.0\ref\lecture 2 console dll ex.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console dll ex\bin\Debug\net5.0\lecture 2 console dll ex.pdb
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console dll ex\bin\Debug\net5.0\lecture 2 console.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console dll ex\bin\Debug\net5.0\lecture 2 console.pdb
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console dll ex\obj\Debug\net5.0\lecture 2 console dll ex.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console dll ex\obj\Debug\net5.0\lecture 2 console dll ex.AssemblyInfoInputs.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console dll ex\obj\Debug\net5.0\lecture 2 console dll ex.AssemblyInfo.cs
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console dll ex\obj\Debug\net5.0\lecture 2 console dll ex.csproj.CoreCompileInputs.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console dll ex\obj\Debug\net5.0\lecture 2 console dll ex.csproj.CopyComplete
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console dll ex\obj\Debug\net5.0\lecture 2 console dll ex.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console dll ex\obj\Debug\net5.0\ref\lecture 2 console dll ex.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console dll ex\obj\Debug\net5.0\lecture 2 console dll ex.pdb
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console dll ex\obj\Debug\net5.0\lecture 2 console dll ex.genruntimeconfig.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 2 console dll ex\obj\Debug\net5.0\lecture 2 console dll ex.csproj.AssemblyReference.cache

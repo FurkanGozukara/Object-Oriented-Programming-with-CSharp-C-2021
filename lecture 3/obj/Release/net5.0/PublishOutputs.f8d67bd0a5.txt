@@ -1,0 +1,5 @@
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 3\bin\Release\net5.0\publish\lecture 3.exe
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 3\bin\Release\net5.0\publish\lecture 3.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 3\bin\Release\net5.0\publish\lecture 3.deps.json
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 3\bin\Release\net5.0\publish\lecture 3.runtimeconfig.json
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 3\bin\Release\net5.0\publish\lecture 3.pdb

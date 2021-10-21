@@ -1,0 +1,22 @@
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 3 wpf cmd\bin\Debug\net5.0-windows\lecture 3 wpf cmd.exe
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 3 wpf cmd\bin\Debug\net5.0-windows\lecture 3 wpf cmd.deps.json
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 3 wpf cmd\bin\Debug\net5.0-windows\lecture 3 wpf cmd.runtimeconfig.json
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 3 wpf cmd\bin\Debug\net5.0-windows\lecture 3 wpf cmd.runtimeconfig.dev.json
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 3 wpf cmd\bin\Debug\net5.0-windows\lecture 3 wpf cmd.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 3 wpf cmd\bin\Debug\net5.0-windows\ref\lecture 3 wpf cmd.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 3 wpf cmd\bin\Debug\net5.0-windows\lecture 3 wpf cmd.pdb
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 3 wpf cmd\obj\Debug\net5.0-windows\lecture 3 wpf cmd.csproj.AssemblyReference.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 3 wpf cmd\obj\Debug\net5.0-windows\MainWindow.g.cs
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 3 wpf cmd\obj\Debug\net5.0-windows\App.g.cs
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 3 wpf cmd\obj\Debug\net5.0-windows\lecture 3 wpf cmd_MarkupCompile.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 3 wpf cmd\obj\Debug\net5.0-windows\lecture 3 wpf cmd_MarkupCompile.lref
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 3 wpf cmd\obj\Debug\net5.0-windows\MainWindow.baml
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 3 wpf cmd\obj\Debug\net5.0-windows\lecture 3 wpf cmd.g.resources
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 3 wpf cmd\obj\Debug\net5.0-windows\lecture 3 wpf cmd.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 3 wpf cmd\obj\Debug\net5.0-windows\lecture 3 wpf cmd.AssemblyInfoInputs.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 3 wpf cmd\obj\Debug\net5.0-windows\lecture 3 wpf cmd.AssemblyInfo.cs
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 3 wpf cmd\obj\Debug\net5.0-windows\lecture 3 wpf cmd.csproj.CoreCompileInputs.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 3 wpf cmd\obj\Debug\net5.0-windows\lecture 3 wpf cmd.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 3 wpf cmd\obj\Debug\net5.0-windows\ref\lecture 3 wpf cmd.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 3 wpf cmd\obj\Debug\net5.0-windows\lecture 3 wpf cmd.pdb
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 3 wpf cmd\obj\Debug\net5.0-windows\lecture 3 wpf cmd.genruntimeconfig.cache

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lecture 3 wpf cmd", "lecture 3 wpf cmd.csproj", "{FA51BE2D-790A-4369-A386-BA1F0CDAF72D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA51BE2D-790A-4369-A386-BA1F0CDAF72D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA51BE2D-790A-4369-A386-BA1F0CDAF72D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA51BE2D-790A-4369-A386-BA1F0CDAF72D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA51BE2D-790A-4369-A386-BA1F0CDAF72D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {665F7D3F-78A8-46F9-99BA-34CDBBBDE174}
+	EndGlobalSection
+EndGlobal

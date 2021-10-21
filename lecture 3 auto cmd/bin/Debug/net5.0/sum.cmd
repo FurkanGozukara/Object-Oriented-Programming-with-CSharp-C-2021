@@ -1,0 +1,1 @@
+cmd /k "sum\\lecture 3.exe" 250 200 500

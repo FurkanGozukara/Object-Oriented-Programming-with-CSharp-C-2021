@@ -1,0 +1,4 @@
+* What are value type, reference type, instruction type and pointer types?
+
+* What is stack and heap
+* What are placed in stack or in heap? Why?

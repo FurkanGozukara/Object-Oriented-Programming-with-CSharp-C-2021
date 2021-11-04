@@ -79,23 +79,63 @@ namespace lecture_4_wpf
 
         private void btnDataRacing_Click(object sender, RoutedEventArgs e)
         {
-            irCounter = 0; irCounter2 = 0; irCounter3 = 0;
-            List<Task> lstTasks = new List<Task>();
-            for (int i = 0; i < 100; i++)
+            Task.Factory.StartNew(() =>
             {
-                var vrStartedTask = Task.Factory.StartNew(() =>
-                {
-                    updateCounterValue();
-                   // updateCounterValueSync1();
-                   // updateCounterValueSync2();
-                });
 
-                lstTasks.Add(vrStartedTask);
-            }
-            Task.WaitAll(lstTasks.ToArray());
-            lstNumbers.Items.Add("counter 1 value: "+ irCounter.ToString("N0"));
-            lstNumbers.Items.Add("counter 2 value: " + irCounter2.ToString("N0"));
-            lstNumbers.Items.Add("counter 3 value: " + irCounter3.ToString("N0"));
+                irCounter = 0; irCounter2 = 0; irCounter3 = 0;
+                List<Task> lstTasks = new List<Task>();
+                for (int i = 0; i < 100; i++)
+                {
+                    var vrStartedTask = Task.Factory.StartNew(() =>
+                    {
+                        updateCounterValue();
+                        updateCounterValueSync1();
+                        updateCounterValueSync2();
+                    });
+
+
+                    vrStartedTask.ContinueWith(faultedTask =>
+                    {
+
+                        updateInterface("task id: " + faultedTask.Id + " faulted");
+
+                    }, TaskContinuationOptions.OnlyOnFaulted
+                    );
+
+                    vrStartedTask.ContinueWith(completedTask =>
+                    {
+
+                        updateInterface("completed task id : " + completedTask.Id + " " + DateTime.Now.ToString("mm-ss-fff"));
+
+
+                    });
+
+                    vrStartedTask.ContinueWith(completedTask =>
+                    {
+
+                        updateInterface("succcessfully completed task id : " + completedTask.Id + " " + DateTime.Now.ToString("mm-ss-fff"));
+
+
+                    }, TaskContinuationOptions.OnlyOnRanToCompletion);
+
+                    lstTasks.Add(vrStartedTask);
+                }
+                Task.WaitAll(lstTasks.ToArray());
+
+                updateInterface("counter 1 value: " + irCounter.ToString("N0"));
+                updateInterface("counter 2 value: " + irCounter2.ToString("N0"));
+                updateInterface("counter 3 value: " + irCounter3.ToString("N0"));
+
+            });
+
+        }
+
+        void updateInterface(string srMsg)
+        {
+            Dispatcher.BeginInvoke((Action)(() =>
+            {
+                lstNumbers.Items.Add(srMsg);
+            }));
         }
 
         void updateCounterValue()
@@ -103,6 +143,11 @@ namespace lecture_4_wpf
             for (int i = 0; i < 1000000; i++)
             {
                 irCounter++;
+            }
+
+            if (new Random().Next(1, 4) == 1)
+            {
+                throw new Exception();
             }
         }
 
@@ -124,7 +169,7 @@ namespace lecture_4_wpf
                 {
                     irCounter3++;
                 }
-                 
+
             }
         }
     }

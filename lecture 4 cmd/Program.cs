@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Text;
+using System.Linq;
 
 namespace lecture_4_cmd
 {
@@ -10,7 +11,7 @@ namespace lecture_4_cmd
     {
         static void Main(string[] args)
         {
-        
+
 
             Stopwatch swTimer = new();
             swTimer.Start();
@@ -133,12 +134,16 @@ namespace lecture_4_cmd
 
             for (int i = 0; i < 10000000; i++)
             {
-                lststrings.Add( i + " test");          
+                lststrings.Add(i + " test");
                 if (i % 1000000 == 0)
                 {
                     Console.WriteLine(i);
                 }
             }
+
+            lststrings.First(); //lststrings[0];
+            lststrings.Sort();
+            var vrNewList = lststrings.Where(pr => pr.Contains("000 test")).ToList();
 
             File.WriteAllLines("test7.txt", lststrings);
 
@@ -185,6 +190,7 @@ namespace lecture_4_cmd
             swTimer.Stop();
             Console.WriteLine("test 9 operation took: " + swTimer.ElapsedMilliseconds + "ms");
 
+            GC.Collect();
         }
 
 

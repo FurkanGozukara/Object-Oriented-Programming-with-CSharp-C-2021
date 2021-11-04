@@ -1,0 +1,15 @@
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 4 cmd\bin\x64\Debug\net5.0\lecture 4 cmd.exe
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 4 cmd\bin\x64\Debug\net5.0\lecture 4 cmd.deps.json
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 4 cmd\bin\x64\Debug\net5.0\lecture 4 cmd.runtimeconfig.json
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 4 cmd\bin\x64\Debug\net5.0\lecture 4 cmd.runtimeconfig.dev.json
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 4 cmd\bin\x64\Debug\net5.0\lecture 4 cmd.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 4 cmd\bin\x64\Debug\net5.0\ref\lecture 4 cmd.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 4 cmd\bin\x64\Debug\net5.0\lecture 4 cmd.pdb
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 4 cmd\obj\x64\Debug\net5.0\lecture 4 cmd.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 4 cmd\obj\x64\Debug\net5.0\lecture 4 cmd.AssemblyInfoInputs.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 4 cmd\obj\x64\Debug\net5.0\lecture 4 cmd.AssemblyInfo.cs
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 4 cmd\obj\x64\Debug\net5.0\lecture 4 cmd.csproj.CoreCompileInputs.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 4 cmd\obj\x64\Debug\net5.0\lecture 4 cmd.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 4 cmd\obj\x64\Debug\net5.0\ref\lecture 4 cmd.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 4 cmd\obj\x64\Debug\net5.0\lecture 4 cmd.pdb
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 4 cmd\obj\x64\Debug\net5.0\lecture 4 cmd.genruntimeconfig.cache

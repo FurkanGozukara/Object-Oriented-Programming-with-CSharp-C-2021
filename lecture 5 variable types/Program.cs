@@ -40,13 +40,13 @@ namespace lecture_5_variable_types
             changeVal2(_ex1, _ex2);
             Console.WriteLine($" _ex1.irEx1: { _ex1.irEx1},  _ex1.irEx2: { _ex1.irEx2}, _ex2.irEx1: {_ex2.irEx1}, _ex2.irEx2: {_ex2.irEx2}");//expected // 500 450 500 450 
 
-            changeVal2(ref _ex1,ref _ex2);
+            changeVal2(ref _ex1, ref _ex2);
             Console.WriteLine($" _ex1.irEx1: { _ex1.irEx1},  _ex1.irEx2: { _ex1.irEx2}, _ex2.irEx1: {_ex2.irEx1}, _ex2.irEx2: {_ex2.irEx2}");//expected // 900 450  0 700 
 
             List<string> lst1 = new List<string>();
             lst1.Add("gg");
             Console.WriteLine($" lst1 = {string.Join(", ", lst1)}"); //gg
-            changeList(lst1); 
+            changeList(lst1);
             Console.WriteLine($" lst1 = {string.Join(", ", lst1)}");// cc aa
 
             List<string> lst2 = lst1;//this will not clone your list
@@ -58,8 +58,29 @@ namespace lecture_5_variable_types
             Console.WriteLine($" lst2 = {string.Join(", ", lst2)}");// cc aa hh kk
             Console.WriteLine($" lst3 = {string.Join(", ", lst3)}");// cc aa hh
 
+            _ex1.irEx1 = 200;
+            _ex1.irEx2 = 400;
             csEx1 ex3 = _ex1;//how to clone _ex1 into new instance of csEx1 - deep clone??
+            _ex1.irEx2 = 300;
+            Console.WriteLine($" ex3.irEx1: { ex3.irEx1},  ex3.irEx2: { ex3.irEx2}, _ex1.irEx1: {_ex1.irEx1}, _ex1.irEx2: {_ex1.irEx2}");//expected //  200 300 200 300
 
+
+            _ex1.lstValues = new List<string> { "gg1", "aa1" };
+            _ex1.lstValues2 = new List<string> { "gg1", "aa1" };
+
+            csEx1 ex4 = new csEx1(_ex1);//??? 200 300
+
+            _ex1.irEx2 = 500; // 200 500
+            _ex1.lstValues[0] = "mm";
+            _ex1.lstValues2[0] = "mm";
+
+            ex4.irEx2 = 1000; // 200 1000
+            ex4.lstValues.Add("cc");
+            ex4.lstValues2.Add("cc");
+            Console.WriteLine($" _ex1.irEx1: { _ex1.irEx1},  _ex1.irEx2: { _ex1.irEx2}, ex4.irEx1: {ex4.irEx1}, ex4.irEx2: {ex4.irEx2}");//expected // 200 500 200 1000
+            Console.WriteLine($" _ex1.lstValues = {string.Join(", ", _ex1.lstValues)} \t ex4.lstValues {string.Join(", ", ex4.lstValues)}");// ?? mm aa1 cc , mm aa1 cc
+
+            Console.WriteLine($" _ex1.lstValues2 = {string.Join(", ", _ex1.lstValues2)} \t ex4.lstValues2 {string.Join(", ", ex4.lstValues2)}");// mm aa1  , gg1 aa1 cc
         }
 
 
@@ -88,7 +109,7 @@ namespace lecture_5_variable_types
 
         private static void changeVal(int _irVal)
         {
-            _irVal = _irVal * 2;             
+            _irVal = _irVal * 2;
         }
 
         private static void changeVal(ref int _irVal)
@@ -98,9 +119,23 @@ namespace lecture_5_variable_types
 
         public class csEx1
         {
+            public List<string> lstValues = new List<string>();
+            public List<string> lstValues2 = new List<string>();
+
+            public csEx1() { }
+
+            public csEx1(csEx1 _ex1)
+            {
+                this.irEx1 = _ex1.irEx1;
+                this.irEx2 = _ex1.irEx2;
+                this.lstValues = _ex1.lstValues;
+                this.lstValues2 = _ex1.lstValues2.ToList();
+            }
+
             public int irEx1;
             public int irEx2 { get; set; }
         }
+
 
 
     }

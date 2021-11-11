@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ruHZNMye5VAbDWmtZcIqsZQENFof7fve6/bvY9Iu/6dEDZQvWaG2awnV0uPD5iBqmbNJRuExdU42ds2pPk9P6w==",
+  "dgSpecHash": "+3KUewLeXd9k87bxKLbAc3pf9IeQiqj1FASYwfcoC/yibzbLlUXtqilUBZjZEn4chYzWMiPLnDsKy25kwk6Gng==",
   "success": true,
   "projectFilePath": "C:\\Users\\Furkan Gözükara\\Desktop\\2021 object oriented\\lecture 5 variable types\\lecture 5 variable types.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Furkan Gözükara\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -14,3 +14,5 @@ C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 variable types
 C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 variable types\obj\Debug\net5.0\ref\lecture 5 variable types.dll
 C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 variable types\obj\Debug\net5.0\lecture 5 variable types.pdb
 C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 variable types\obj\Debug\net5.0\lecture 5 variable types.genruntimeconfig.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 variable types\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 variable types\obj\Debug\net5.0\lecture 5 variable types.csproj.CopyComplete

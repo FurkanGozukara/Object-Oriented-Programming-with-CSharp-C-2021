@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -81,8 +82,52 @@ namespace lecture_5_variable_types
             Console.WriteLine($" _ex1.lstValues = {string.Join(", ", _ex1.lstValues)} \t ex4.lstValues {string.Join(", ", ex4.lstValues)}");// ?? mm aa1 cc , mm aa1 cc
 
             Console.WriteLine($" _ex1.lstValues2 = {string.Join(", ", _ex1.lstValues2)} \t ex4.lstValues2 {string.Join(", ", ex4.lstValues2)}");// mm aa1  , gg1 aa1 cc
+
+            string json = JsonConvert.SerializeObject(_ex1, Formatting.Indented);
+            csEx1 ex5 = JsonConvert.DeserializeObject<csEx1>(json);//deep clone
+
+            _ex1.irEx2 = 750; // 200 500
+            ex5.lstValues[0] = "test";
+
+            Console.WriteLine($"  _ex1.irEx2: {  _ex1.irEx2},   ex5.irEx2: {  ex5.irEx2}, _ex1.lstValues[0]: {  _ex1.lstValues[0]},   ex5.lstValues[0]: {  ex5.lstValues[0]}, ");
+
+            st1 _st1 = new st1();
+            _st1.irEx1 = 720;
+            _st1.irEx2 = 320;
+            _st1.lstValues = new List<string> { "st1", "test st1" };
+            _st1.lstValues2 = new List<string> { "aa" };
+
+            st1 _st2 = _st1;
+
+            _st1.irEx2 = 1000;
+            _st1.lstValues[0] = "st1 changed";
+
+            Console.WriteLine($"  _st1.irEx2: {  _st1.irEx2},   _st2.irEx2: {  _st2.irEx2}, _st1.lstValues[0]: { string.Join(",", _st1.lstValues)},   _st2.lstValues[0]: { string.Join(",", _st2.lstValues)} ");
+            //
+           
+            _st2.irEx2 = 950;
+            _st2.lstValues[0] = "st2 changed";
+
+            Console.WriteLine($"  _st1.irEx2: {  _st1.irEx2},   _st2.irEx2: {  _st2.irEx2}, _st1.lstValues[0]: { string.Join(",", _st1.lstValues)},   _st2.lstValues[0]: { string.Join(",", _st2.lstValues)} ");
+            //
         }
 
+        public struct st1
+        {
+            public List<string> lstValues;
+            public List<string> lstValues2;
+
+            public st1(st1 _ex1)
+            {
+                this.irEx1 = _ex1.irEx1;
+                this.irEx2 = _ex1.irEx2;
+                this.lstValues = _ex1.lstValues;//this is not deep clone since it is reference type
+                this.lstValues2 = _ex1.lstValues2.ToList();//this does deep clone
+            }
+
+            public int irEx1;
+            public int irEx2 { get; set; }
+        }
 
 
         private static void changeList(List<string> lst)
@@ -128,8 +173,8 @@ namespace lecture_5_variable_types
             {
                 this.irEx1 = _ex1.irEx1;
                 this.irEx2 = _ex1.irEx2;
-                this.lstValues = _ex1.lstValues;
-                this.lstValues2 = _ex1.lstValues2.ToList();
+                this.lstValues = _ex1.lstValues;//this is not deep clone since it is reference type
+                this.lstValues2 = _ex1.lstValues2.ToList();//this does deep clone
             }
 
             public int irEx1;

@@ -102,14 +102,36 @@ namespace lecture_5_variable_types
             _st1.irEx2 = 1000;
             _st1.lstValues[0] = "st1 changed";
 
-            Console.WriteLine($"  _st1.irEx2: {  _st1.irEx2},   _st2.irEx2: {  _st2.irEx2}, _st1.lstValues[0]: { string.Join(",", _st1.lstValues)},   _st2.lstValues[0]: { string.Join(",", _st2.lstValues)} ");
-            //
-           
+            Console.WriteLine($"  _st1.irEx2: {  _st1.irEx2},   _st2.irEx2: {  _st2.irEx2}, _st1.lstValues[0]: { string.Join(",", _st1.lstValues)},   _st2.lstValues: { string.Join(",", _st2.lstValues)} ");
+            // 1000 320 , st1 changed test 1 ,   st1 changed test 1
+
             _st2.irEx2 = 950;
             _st2.lstValues[0] = "st2 changed";
 
             Console.WriteLine($"  _st1.irEx2: {  _st1.irEx2},   _st2.irEx2: {  _st2.irEx2}, _st1.lstValues[0]: { string.Join(",", _st1.lstValues)},   _st2.lstValues[0]: { string.Join(",", _st2.lstValues)} ");
-            //
+            // 720 1000 st1 changed test st1 , 720 950 st2 changed test st1
+
+            json = JsonConvert.SerializeObject(_st1, Formatting.Indented);
+            _st2 = JsonConvert.DeserializeObject<st1>(json);//deep clone
+
+            _st1.lstValues[0] = "st1 changed";
+            _st2.lstValues[0] = "st2 changed";
+
+            // callItself(); causes stack overflow error
+
+            string a1 = "test";
+            string a2 = a1;
+            a1 = "gg";//this will not modify the value of a1. it will compose a new string value from scratch
+            //An immutable type, in the context of C#, is a type of object whose data cannot be changed after its creation. An immutable type sets the property or state of the object as read only because it cannot be modified after it is assigned during initialization. ... Immutable types provides higher security than mutable types.
+            a2 = "wp";
+        }
+
+        public static void callItself()
+        {
+            while(true)
+            {
+                callItself();
+            }
         }
 
         public struct st1

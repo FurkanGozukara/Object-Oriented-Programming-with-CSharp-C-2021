@@ -1,0 +1,16 @@
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 inheritance\bin\Debug\net5.0\lecture 5 inheritance.exe
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 inheritance\bin\Debug\net5.0\lecture 5 inheritance.deps.json
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 inheritance\bin\Debug\net5.0\lecture 5 inheritance.runtimeconfig.json
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 inheritance\bin\Debug\net5.0\lecture 5 inheritance.runtimeconfig.dev.json
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 inheritance\bin\Debug\net5.0\lecture 5 inheritance.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 inheritance\bin\Debug\net5.0\ref\lecture 5 inheritance.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 inheritance\bin\Debug\net5.0\lecture 5 inheritance.pdb
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 inheritance\obj\Debug\net5.0\lecture 5 inheritance.csproj.AssemblyReference.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 inheritance\obj\Debug\net5.0\lecture 5 inheritance.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 inheritance\obj\Debug\net5.0\lecture 5 inheritance.AssemblyInfoInputs.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 inheritance\obj\Debug\net5.0\lecture 5 inheritance.AssemblyInfo.cs
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 inheritance\obj\Debug\net5.0\lecture 5 inheritance.csproj.CoreCompileInputs.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 inheritance\obj\Debug\net5.0\lecture 5 inheritance.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 inheritance\obj\Debug\net5.0\ref\lecture 5 inheritance.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 inheritance\obj\Debug\net5.0\lecture 5 inheritance.pdb
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 inheritance\obj\Debug\net5.0\lecture 5 inheritance.genruntimeconfig.cache

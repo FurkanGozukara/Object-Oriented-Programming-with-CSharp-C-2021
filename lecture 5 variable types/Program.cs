@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace lecture_5_variable_types
 {
@@ -36,7 +38,45 @@ namespace lecture_5_variable_types
             Console.WriteLine($"ir1: {ir1}, ir2: {ir2}");//expected  8 5
 
             changeVal2(_ex1, _ex2);
-            Console.WriteLine($" _ex1.irEx1: { _ex1.irEx1},  _ex1.irEx2: { _ex1.irEx2}, _ex2.irEx1: {_ex2.irEx1}, _ex2.irEx2: {_ex2.irEx2}");//expected //???
+            Console.WriteLine($" _ex1.irEx1: { _ex1.irEx1},  _ex1.irEx2: { _ex1.irEx2}, _ex2.irEx1: {_ex2.irEx1}, _ex2.irEx2: {_ex2.irEx2}");//expected // 500 450 500 450 
+
+            changeVal2(ref _ex1,ref _ex2);
+            Console.WriteLine($" _ex1.irEx1: { _ex1.irEx1},  _ex1.irEx2: { _ex1.irEx2}, _ex2.irEx1: {_ex2.irEx1}, _ex2.irEx2: {_ex2.irEx2}");//expected // 900 450  0 700 
+
+            List<string> lst1 = new List<string>();
+            lst1.Add("gg");
+            Console.WriteLine($" lst1 = {string.Join(", ", lst1)}"); //gg
+            changeList(lst1); 
+            Console.WriteLine($" lst1 = {string.Join(", ", lst1)}");// cc aa
+
+            List<string> lst2 = lst1;//this will not clone your list
+            Console.WriteLine($" lst2 = {string.Join(", ", lst2)}");// cc aa
+            lst1.Add("hh");
+            Console.WriteLine($" lst2 = {string.Join(", ", lst2)}");//  cc aa hh
+            List<string> lst3 = lst1.ToList();//this will clone your list
+            lst1.Add("kk"); // cc aa hh kk
+            Console.WriteLine($" lst2 = {string.Join(", ", lst2)}");// cc aa hh kk
+            Console.WriteLine($" lst3 = {string.Join(", ", lst3)}");// cc aa hh
+
+            csEx1 ex3 = _ex1;//how to clone _ex1 into new instance of csEx1 - deep clone??
+
+        }
+
+
+
+        private static void changeList(List<string> lst)
+        {
+            lst.Add("aa");// gg aa
+            lst[0] = "cc";// cc aa
+            lst = new List<string>();// empty
+            lst.Add("bb");// bb
+        }
+
+        private static void changeVal2(ref csEx1 _ex1, ref csEx1 _ex2)
+        {
+            _ex1.irEx1 = 900;// 900 450
+            _ex2 = new csEx1();//0 0
+            _ex2.irEx2 = 700;// 0 700
         }
 
         private static void changeVal2(csEx1 _ex1, csEx1 _ex2)

@@ -1,0 +1,16 @@
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 variable types\bin\Debug\net5.0\lecture 5 variable types.exe
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 variable types\bin\Debug\net5.0\lecture 5 variable types.deps.json
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 variable types\bin\Debug\net5.0\lecture 5 variable types.runtimeconfig.json
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 variable types\bin\Debug\net5.0\lecture 5 variable types.runtimeconfig.dev.json
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 variable types\bin\Debug\net5.0\lecture 5 variable types.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 variable types\bin\Debug\net5.0\ref\lecture 5 variable types.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 variable types\bin\Debug\net5.0\lecture 5 variable types.pdb
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 variable types\obj\Debug\net5.0\lecture 5 variable types.csproj.AssemblyReference.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 variable types\obj\Debug\net5.0\lecture 5 variable types.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 variable types\obj\Debug\net5.0\lecture 5 variable types.AssemblyInfoInputs.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 variable types\obj\Debug\net5.0\lecture 5 variable types.AssemblyInfo.cs
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 variable types\obj\Debug\net5.0\lecture 5 variable types.csproj.CoreCompileInputs.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 variable types\obj\Debug\net5.0\lecture 5 variable types.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 variable types\obj\Debug\net5.0\ref\lecture 5 variable types.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 variable types\obj\Debug\net5.0\lecture 5 variable types.pdb
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 5 variable types\obj\Debug\net5.0\lecture 5 variable types.genruntimeconfig.cache

@@ -14,3 +14,5 @@ C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 6 console\obj\De
 C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 6 console\obj\Debug\net5.0\ref\lecture 6 console.dll
 C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 6 console\obj\Debug\net5.0\lecture 6 console.pdb
 C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 6 console\obj\Debug\net5.0\lecture 6 console.genruntimeconfig.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 6 console\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 6 console\obj\Debug\net5.0\lecture 6 console.csproj.CopyComplete

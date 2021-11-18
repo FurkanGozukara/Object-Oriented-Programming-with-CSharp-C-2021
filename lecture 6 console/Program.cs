@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using static lecture_6_console.mathOps;
 
 namespace lecture_6_console
@@ -14,6 +16,20 @@ namespace lecture_6_console
         {
             Console.WriteLine($"{_myTest.srTestName} + {_myTest.srTestName} + {Math.Pow(_myTest.irTestSize, 2)}");
         }
+
+        public static string Base64Encode(this string plainText)
+        {
+            var plainTextBytes = System.Text.Encoding.UTF8.GetBytes(plainText);
+            return System.Convert.ToBase64String(plainTextBytes);
+        }
+
+        public static string Base64Decode(this string base64EncodedData)
+        {
+            var base64EncodedBytes = System.Convert.FromBase64String(base64EncodedData);
+            return System.Text.Encoding.UTF8.GetString(base64EncodedBytes);
+        }
+
+
     }
 
 
@@ -82,18 +98,33 @@ namespace lecture_6_console
                 irTestSize = 100 + irAdd;
             }
 
-            public void saveToText_primitive//code this method
+            public void saveToText_primitive()
+            {
+                File.WriteAllText("primitive_class.txt", $"{this.irTestSize};{this.srTestName.Base64Encode()}");
+            }
 
-                public void readFromText_primitive//code this method
+            public void readFromText_primitive()
+            {
+                var vrList = File.ReadAllText("primitive_class.txt").Split(';');
+                this.irTestSize = Convert.ToInt32(vrList[0]);
+                this.srTestName = vrList[1].Base64Decode();
+            }//code this method
 
-                    public void readFromText_Json//code this method
+            public void saveToText_Json()
+            {
+                var vrText = JsonConvert.SerializeObject(this, Formatting.Indented);
+                File.WriteAllText("json_class.txt", vrText);
+            }
 
-                  public void saveToText_Json//code this method
+            public void readFromText_Json(ref test myTest)
+            {
+                myTest = JsonConvert.DeserializeObject<test>(File.ReadAllText("json_class.txt"));//deep clone
+            }
         }
 
         static void Main(string[] args)
         {
-     
+
 
             Console.WriteLine(irConst55);
             Console.WriteLine(new Program().irRead55);
@@ -118,7 +149,22 @@ namespace lecture_6_console
             Console.WriteLine($"test name: {_test1.srTestName} , test size: {_test1.irTestSize}");
             _test1.irTestSize = 300;
             _test1.printSpecial();
+            _test1.saveToText_primitive();
+            _test1 = new test();
+            Console.WriteLine($"test name: {_test1.srTestName} , test size: {_test1.irTestSize}");
+            _test1.readFromText_primitive();
 
+            _test1.irTestSize = 1000;
+            _test1.srTestName = File.ReadAllText("aa.txt");
+            _test1.saveToText_Json();
+            _test1.saveToText_primitive();
+            Console.WriteLine($"test name: {_test1.srTestName} , test size: {_test1.irTestSize}");
+            _test1 = new test();
+            Console.WriteLine($"test name: {_test1.srTestName} , test size: {_test1.irTestSize}");
+            _test1.readFromText_Json(ref _test1);
+            Console.WriteLine($"test name: {_test1.srTestName} , test size: {_test1.irTestSize}");
+
+            Console.WriteLine($"test name: {_test1.srTestName} , test size: {_test1.irTestSize}");
             Console.WriteLine(new mathOps().sumNumbers(3, 2, 1, 14, 15, 15, 16));
 
             Console.WriteLine(sumNumbers2(3, 2, 1, 14, 15, 15, 16));
@@ -143,7 +189,7 @@ namespace lecture_6_console
                 { }
             }
 
-            while(true)
+            while (true)
             {
                 var vrValue = Console.ReadLine();
                 bool blBreak = false;

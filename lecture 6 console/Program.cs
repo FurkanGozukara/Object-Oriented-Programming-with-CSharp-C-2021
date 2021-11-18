@@ -1,11 +1,22 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using static lecture_6_console.mathOps;
 
 namespace lecture_6_console
 {
+    public static class csExtensions
+    {
+        //write an extension to test class that does print (test name + test name + square of test size)
 
-    class Program
+        public static void printSpecial(this Program.test _myTest)
+        {
+            Console.WriteLine($"{_myTest.srTestName} + {_myTest.srTestName} + {Math.Pow(_myTest.irTestSize, 2)}");
+        }
+    }
+
+
+    public class Program
     {
         private static int _MyProperty;//field
         public static int MyProperty
@@ -77,6 +88,12 @@ namespace lecture_6_console
             Console.WriteLine($"test name: {_test1.srTestName} , test size: {_test1.irTestSize}");
             _test1 = new test(100, irAdd: 200, irAdd3: 300);
             Console.WriteLine($"test name: {_test1.srTestName} , test size: {_test1.irTestSize}");
+            _test1.irTestSize = 300;
+            _test1.printSpecial();
+
+            Console.WriteLine(new mathOps().sumNumbers(3,2,1,14,15,15,16));
+
+            Console.WriteLine(sumNumbers2(3, 2, 1, 14, 15, 15, 16));
         }
     }
 }

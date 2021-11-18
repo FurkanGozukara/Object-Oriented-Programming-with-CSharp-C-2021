@@ -82,9 +82,13 @@ namespace lecture_6_console
                 irTestSize = 100 + irAdd;
             }
 
-            public void saveToText//code this method
+            public void saveToText_primitive//code this method
 
-                public void readFromText//code this method
+                public void readFromText_primitive//code this method
+
+                    public void readFromText_Json//code this method
+
+                  public void saveToText_Json//code this method
         }
 
         static void Main(string[] args)

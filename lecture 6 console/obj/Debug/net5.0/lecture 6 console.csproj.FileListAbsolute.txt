@@ -1,0 +1,16 @@
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 6 console\bin\Debug\net5.0\lecture 6 console.exe
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 6 console\bin\Debug\net5.0\lecture 6 console.deps.json
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 6 console\bin\Debug\net5.0\lecture 6 console.runtimeconfig.json
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 6 console\bin\Debug\net5.0\lecture 6 console.runtimeconfig.dev.json
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 6 console\bin\Debug\net5.0\lecture 6 console.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 6 console\bin\Debug\net5.0\ref\lecture 6 console.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 6 console\bin\Debug\net5.0\lecture 6 console.pdb
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 6 console\obj\Debug\net5.0\lecture 6 console.csproj.AssemblyReference.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 6 console\obj\Debug\net5.0\lecture 6 console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 6 console\obj\Debug\net5.0\lecture 6 console.AssemblyInfoInputs.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 6 console\obj\Debug\net5.0\lecture 6 console.AssemblyInfo.cs
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 6 console\obj\Debug\net5.0\lecture 6 console.csproj.CoreCompileInputs.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 6 console\obj\Debug\net5.0\lecture 6 console.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 6 console\obj\Debug\net5.0\ref\lecture 6 console.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 6 console\obj\Debug\net5.0\lecture 6 console.pdb
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 6 console\obj\Debug\net5.0\lecture 6 console.genruntimeconfig.cache

@@ -1,1 +1,4 @@
-hepsini işledik 5. hafta
+* How to write custom extensions to quickly chain them such as converting string into integer with method chaining
+* How to use Enum
+* What are the benefits of Enum
+* How to loop through Enum

@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -24,6 +26,7 @@ namespace lecture_7_wpf
         public MainWindow()
         {
             InitializeComponent();
+            swLogs.AutoFlush = true;
         }
         private static object _obj = new object();
         private void btnBeginInvoke_Click(object sender, RoutedEventArgs e)
@@ -66,24 +69,43 @@ namespace lecture_7_wpf
                 MessageBox.Show("invoke took: " + sw1.ElapsedMilliseconds.ToString("N0") + " ms");
             });
         }
-
+        private static bool blThreadStarted = false;
         private void btnStartCrawler_Click(object sender, RoutedEventArgs e)
         {
+            blThreadStarted = false;
             irCrawlerId++;
-            Task.Factory.StartNew(() => { startCrawl(); });
+            var vrTask = Task.Factory.StartNew(() => { startCrawl(); });
+            while (true)
+            {
+                System.Threading.Thread.Sleep(5);
+                if (blThreadStarted == true)
+                    break;
+            }
         }
         int irCrawlerId = 0;
+        static StreamWriter swLogs = new StreamWriter("logs.txt");
+
+        private static object _lockSw = new object();
         private void startCrawl()
         {
             int _irCrawlerId = irCrawlerId;
             int irCrawledUrlCount = 0;
+            blThreadStarted = true;
             while (true)
             {
                 irCrawledUrlCount++;
                 Dispatcher.BeginInvoke((Action)(() =>
                 {
-                    lstBox2.Items.Insert(0,"crawler id: " + _irCrawlerId + " crawled " + irCrawledUrlCount.ToString("N0"));
+                    lstBox2.Items.Insert(0, "crawler id: " + _irCrawlerId + " crawled " + irCrawledUrlCount.ToString("N0"));
                 }));
+
+                lock (_lockSw)
+                {
+                    swLogs.WriteLine("crawler id: " + _irCrawlerId + " crawled " + irCrawledUrlCount.ToString("N0") + "\t " + Thread.CurrentThread.ManagedThreadId);
+                    swLogs.Flush();
+                }
+
+
                 System.Threading.Thread.Sleep(new Random().Next(0, 1000));
             }
 

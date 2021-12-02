@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "lecture 7 wpf/1.0.0": {
+        "runtime": {
+          "lecture 7 wpf.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "lecture 7 wpf/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

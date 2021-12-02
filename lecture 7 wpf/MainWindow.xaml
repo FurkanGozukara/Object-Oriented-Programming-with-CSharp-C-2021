@@ -9,6 +9,8 @@
     <Grid>
         <ListBox Name="lstBox1" Margin="20,77,640,114"/>
         <Button Content="beging invoke" Name="btnBeginInvoke" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="121" Click="btnBeginInvoke_Click"/>
-        <Button Content="invoke" x:Name="btnInvoke" HorizontalAlignment="Left" Margin="206,20,0,0" VerticalAlignment="Top" Width="121" Click="btnInvoke_Click"/>
+        <Button Content="invoke" x:Name="btnInvoke" HorizontalAlignment="Left" Margin="160,20,0,0" VerticalAlignment="Top" Width="121" Click="btnInvoke_Click"/>
+        <ListBox   x:Name="lstBox2" Margin="188,77,369,114"/>
+        <Button Content="start crawler" Name="btnStartCrawler" HorizontalAlignment="Left" Margin="502,20,0,0" VerticalAlignment="Top" Width="90" Click="btnStartCrawler_Click"/>
     </Grid>
 </Window>

@@ -25,7 +25,7 @@ namespace lecture_7_wpf
         {
             InitializeComponent();
         }
-
+        private static object _obj = new object();
         private void btnBeginInvoke_Click(object sender, RoutedEventArgs e)
         {
             Task.Factory.StartNew(() =>
@@ -35,10 +35,10 @@ namespace lecture_7_wpf
                 for (int i = 0; i < 100000; i++)
                 {
                     //lstBox1.Items.Add(i.ToString("N0"));//'The calling thread cannot access this object because a different thread owns it.'
-
+                    int ir = i;
                     Dispatcher.BeginInvoke((Action)(() =>
                     {
-                        lstBox1.Items.Add(i.ToString("N0"));
+                        lstBox1.Items.Add(ir.ToString("N0"));
                     }));
                 }
                 sw1.Stop();
@@ -65,6 +65,28 @@ namespace lecture_7_wpf
                 sw1.Stop();
                 MessageBox.Show("invoke took: " + sw1.ElapsedMilliseconds.ToString("N0") + " ms");
             });
+        }
+
+        private void btnStartCrawler_Click(object sender, RoutedEventArgs e)
+        {
+            irCrawlerId++;
+            Task.Factory.StartNew(() => { startCrawl(); });
+        }
+        int irCrawlerId = 0;
+        private void startCrawl()
+        {
+            int _irCrawlerId = irCrawlerId;
+            int irCrawledUrlCount = 0;
+            while (true)
+            {
+                irCrawledUrlCount++;
+                Dispatcher.BeginInvoke((Action)(() =>
+                {
+                    lstBox2.Items.Insert(0,"crawler id: " + _irCrawlerId + " crawled " + irCrawledUrlCount.ToString("N0"));
+                }));
+                System.Threading.Thread.Sleep(new Random().Next(0, 1000));
+            }
+
         }
     }
 }

@@ -1,0 +1,25 @@
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 wpf\bin\Release\net5.0-windows\lecture 8 wpf.exe
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 wpf\bin\Release\net5.0-windows\lecture 8 wpf.deps.json
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 wpf\bin\Release\net5.0-windows\lecture 8 wpf.runtimeconfig.json
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 wpf\bin\Release\net5.0-windows\lecture 8 wpf.runtimeconfig.dev.json
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 wpf\bin\Release\net5.0-windows\lecture 8 wpf.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 wpf\bin\Release\net5.0-windows\ref\lecture 8 wpf.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 wpf\bin\Release\net5.0-windows\lecture 8 wpf.pdb
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 wpf\bin\Release\net5.0-windows\lecture 8 dll example.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 wpf\bin\Release\net5.0-windows\lecture 8 dll example.pdb
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 wpf\obj\Release\net5.0-windows\lecture 8 wpf.csproj.AssemblyReference.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 wpf\obj\Release\net5.0-windows\MainWindow.g.cs
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 wpf\obj\Release\net5.0-windows\App.g.cs
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 wpf\obj\Release\net5.0-windows\lecture 8 wpf_MarkupCompile.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 wpf\obj\Release\net5.0-windows\lecture 8 wpf_MarkupCompile.lref
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 wpf\obj\Release\net5.0-windows\MainWindow.baml
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 wpf\obj\Release\net5.0-windows\lecture 8 wpf.g.resources
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 wpf\obj\Release\net5.0-windows\lecture 8 wpf.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 wpf\obj\Release\net5.0-windows\lecture 8 wpf.AssemblyInfoInputs.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 wpf\obj\Release\net5.0-windows\lecture 8 wpf.AssemblyInfo.cs
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 wpf\obj\Release\net5.0-windows\lecture 8 wpf.csproj.CoreCompileInputs.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 wpf\obj\Release\net5.0-windows\lecture 8 wpf.csproj.CopyComplete
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 wpf\obj\Release\net5.0-windows\lecture 8 wpf.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 wpf\obj\Release\net5.0-windows\ref\lecture 8 wpf.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 wpf\obj\Release\net5.0-windows\lecture 8 wpf.pdb
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 wpf\obj\Release\net5.0-windows\lecture 8 wpf.genruntimeconfig.cache

@@ -1,0 +1,12 @@
+C:\Users\Furkan Gözükara\Desktop\aa\lecture 8 wpf.pdb
+C:\Users\Furkan Gözükara\Desktop\aa\clrcompression.dll
+C:\Users\Furkan Gözükara\Desktop\aa\clrjit.dll
+C:\Users\Furkan Gözükara\Desktop\aa\coreclr.dll
+C:\Users\Furkan Gözükara\Desktop\aa\mscordaccore.dll
+C:\Users\Furkan Gözükara\Desktop\aa\D3DCompiler_47_cor3.dll
+C:\Users\Furkan Gözükara\Desktop\aa\PenImc_cor3.dll
+C:\Users\Furkan Gözükara\Desktop\aa\PresentationNative_cor3.dll
+C:\Users\Furkan Gözükara\Desktop\aa\vcruntime140_cor3.dll
+C:\Users\Furkan Gözükara\Desktop\aa\wpfgfx_cor3.dll
+C:\Users\Furkan Gözükara\Desktop\aa\lecture 8 dll example.pdb
+C:\Users\Furkan Gözükara\Desktop\aa\lecture 8 wpf.exe

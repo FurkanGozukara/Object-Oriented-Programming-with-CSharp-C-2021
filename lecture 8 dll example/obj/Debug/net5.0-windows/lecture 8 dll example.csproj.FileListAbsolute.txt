@@ -1,0 +1,11 @@
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 dll example\bin\Debug\net5.0-windows\lecture 8 dll example.deps.json
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 dll example\bin\Debug\net5.0-windows\lecture 8 dll example.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 dll example\bin\Debug\net5.0-windows\ref\lecture 8 dll example.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 dll example\bin\Debug\net5.0-windows\lecture 8 dll example.pdb
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 dll example\obj\Debug\net5.0-windows\lecture 8 dll example.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 dll example\obj\Debug\net5.0-windows\lecture 8 dll example.AssemblyInfoInputs.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 dll example\obj\Debug\net5.0-windows\lecture 8 dll example.AssemblyInfo.cs
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 dll example\obj\Debug\net5.0-windows\lecture 8 dll example.csproj.CoreCompileInputs.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 dll example\obj\Debug\net5.0-windows\lecture 8 dll example.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 dll example\obj\Debug\net5.0-windows\ref\lecture 8 dll example.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 8 dll example\obj\Debug\net5.0-windows\lecture 8 dll example.pdb

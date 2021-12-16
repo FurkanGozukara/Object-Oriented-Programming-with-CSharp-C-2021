@@ -1,0 +1,24 @@
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 9 app startup example\bin\Debug\net5.0-windows\lecture 9 app startup example.exe
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 9 app startup example\bin\Debug\net5.0-windows\lecture 9 app startup example.deps.json
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 9 app startup example\bin\Debug\net5.0-windows\lecture 9 app startup example.runtimeconfig.json
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 9 app startup example\bin\Debug\net5.0-windows\lecture 9 app startup example.runtimeconfig.dev.json
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 9 app startup example\bin\Debug\net5.0-windows\lecture 9 app startup example.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 9 app startup example\bin\Debug\net5.0-windows\ref\lecture 9 app startup example.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 9 app startup example\bin\Debug\net5.0-windows\lecture 9 app startup example.pdb
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 9 app startup example\obj\Debug\net5.0-windows\lecture 9 app startup example.csproj.AssemblyReference.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 9 app startup example\obj\Debug\net5.0-windows\MainWindow.g.cs
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 9 app startup example\obj\Debug\net5.0-windows\SecondWindow.g.cs
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 9 app startup example\obj\Debug\net5.0-windows\App.g.cs
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 9 app startup example\obj\Debug\net5.0-windows\lecture 9 app startup example_MarkupCompile.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 9 app startup example\obj\Debug\net5.0-windows\lecture 9 app startup example_MarkupCompile.lref
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 9 app startup example\obj\Debug\net5.0-windows\MainWindow.baml
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 9 app startup example\obj\Debug\net5.0-windows\SecondWindow.baml
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 9 app startup example\obj\Debug\net5.0-windows\lecture 9 app startup example.g.resources
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 9 app startup example\obj\Debug\net5.0-windows\lecture 9 app startup example.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 9 app startup example\obj\Debug\net5.0-windows\lecture 9 app startup example.AssemblyInfoInputs.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 9 app startup example\obj\Debug\net5.0-windows\lecture 9 app startup example.AssemblyInfo.cs
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 9 app startup example\obj\Debug\net5.0-windows\lecture 9 app startup example.csproj.CoreCompileInputs.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 9 app startup example\obj\Debug\net5.0-windows\lecture 9 app startup example.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 9 app startup example\obj\Debug\net5.0-windows\ref\lecture 9 app startup example.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 9 app startup example\obj\Debug\net5.0-windows\lecture 9 app startup example.pdb
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 9 app startup example\obj\Debug\net5.0-windows\lecture 9 app startup example.genruntimeconfig.cache

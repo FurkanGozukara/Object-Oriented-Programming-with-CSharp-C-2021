@@ -87,6 +87,7 @@ namespace lecture_9_cmd
                 : base(w, l)
             {
                 Style = s;
+
             }
 
             // Construct an square.

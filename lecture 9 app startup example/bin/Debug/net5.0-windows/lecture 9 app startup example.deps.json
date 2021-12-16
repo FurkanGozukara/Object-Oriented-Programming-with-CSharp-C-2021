@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "lecture 9 app startup example/1.0.0": {
+        "runtime": {
+          "lecture 9 app startup example.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "lecture 9 app startup example/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

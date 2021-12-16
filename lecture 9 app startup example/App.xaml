@@ -1,0 +1,9 @@
+﻿<Application x:Class="lecture_9_app_startup_example.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:lecture_9_app_startup_example"
+              Startup="Application_Startup">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

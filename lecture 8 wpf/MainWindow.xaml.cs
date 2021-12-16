@@ -44,7 +44,7 @@ namespace lecture_8_wpf
             initStudentList();
 
             lstbox1.ItemsSource = lstStudents;
-            lstbox1.DisplayMemberPath = "displayStudent";
+         //   lstbox1.DisplayMemberPath = "displayStudent";
             lstbox1.SelectedValuePath = "studentId";
 
             lstbox1.SelectionChanged += Lstbox1_SelectionChanged;
@@ -95,12 +95,29 @@ namespace lecture_8_wpf
 
             for (int i = 0; i < 10; i++)
             {
-                lstStudents.Add(new students { firstName = $"{_student} " + i, lastName = "surname " + i, registerDate = new DateTime(2000 + i, 1 + i, 1 + i), studentId = 1 + i });
+                var vrStudent = new students { firstName = $"{_student} " + i, lastName = "surname " + i, registerDate = new DateTime(2000 + i, 1 + i, 1 + i), studentId = 1 + i };
+
+                switch (i)
+                {
+                    case 1:
+                        vrStudent.FontStyle = FontStyles.Oblique;
+                        vrStudent.Foreground = Brushes.Green;
+                        break;
+                    case 2:
+                        vrStudent.FontStyle = FontStyles.Normal;
+                        vrStudent.Foreground = Brushes.Aqua;
+                        break;
+                }
+                lstStudents.Add(vrStudent);
             }
         }
 
         public class students
         {
+            public Brush Foreground { get; set; } = Brushes.Red;
+            public FontStyle FontStyle { get; set; } = FontStyles.Italic;
+            public FontWeight FontWeight { get; set; } = FontWeights.Bold;
+
             public string firstName { get; set; }
 
             public string lastName { get; set; }

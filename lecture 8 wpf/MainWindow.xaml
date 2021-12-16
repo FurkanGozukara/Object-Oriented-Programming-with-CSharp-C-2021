@@ -7,7 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ListBox Name="lstbox1" Margin="26,23,323,200"/>
+        <ListBox Name="lstbox1" Margin="26,23,323,200">
+
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding displayStudent}"
+                       Foreground="{Binding Foreground}"
+                       FontStyle="{Binding FontStyle}"
+                       FontWeight="{Binding FontWeight}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+
+        </ListBox>
         <Label Name="lblSelectedVal" Content="Label" HorizontalAlignment="Left" Margin="501,23,0,0" VerticalAlignment="Top"/>
         <ListBox Name="listBox2" Margin="26,259,323,38"/>
         <Button Content="test dll example" Name="btnTestdll" Click="btnTestdll_Click"

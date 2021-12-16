@@ -1,4 +1,5 @@
 ﻿using System;
+using static lecture_9_cmd.multi_level_inheritance;
 
 namespace lecture_9_cmd
 {
@@ -25,15 +26,22 @@ namespace lecture_9_cmd
             Console.Clear();
 
             Drawing circle = new Circle();
-            Console.WriteLine("base is drawing, class is circle Area :" + circle.Area());
-            Console.WriteLine("base is drawing, class is circle Area2 :" + circle.Area2());
+            Console.WriteLine("base is drawing, class is circle Area :" + circle.Area());//this runs the area method of circle class since it is overriden
+            Console.WriteLine("base is drawing, class is circle Area2 :" + circle.Area2());//this runs the area2 method of base drawing class
             //what these prints
 
             Circle circle2 = new Circle();
-            Console.WriteLine("base is circle, class is circle Area :" + circle2.Area());
-            Console.WriteLine("base is Circle, class is circle Area2 :" + circle2.Area2());
+            Console.WriteLine("base is circle, class is circle Area :" + circle2.Area());//this runs area of circle
+            Console.WriteLine("base is Circle, class is circle Area2 :" + circle2.Area2());//this runs area2 of circle
+                                                                                           //what these prints
+
+            Circle circle3 = new Circle2();
+            Console.WriteLine("base is circle, class is Circle2 Area :" + circle3.Area());//this runs area of circle
+            Console.WriteLine("base is Circle, class is Circle2 Area2 :" + circle3.Area2());//this runs area2 of circle
             //what these prints
 
+            GFG exgfg = new GFG();
+            exgfg.execute();
         }
 
         abstract class Shape
@@ -219,6 +227,29 @@ namespace lecture_9_cmd
             public void printCircle()
             {
                 Console.WriteLine("circle");
+            }
+        }
+
+        public class Circle2 : Circle //circle is derived class of drawing - inherating drawing class
+        {
+            public double Radius { get; set; }//property
+            public Circle2()//constructor
+            {
+                Radius = 50;
+            }
+            public override double Area()//overriding the parent class virtual method
+            {
+                return (3.14) * Math.Pow(Radius, 2);
+            }
+
+            public new double Area2()//method hiding
+            {
+                return (3.14) * Math.Pow(Radius, 2) * 2;
+            }
+
+            public void printCircle()
+            {
+                Console.WriteLine("circle2");
             }
         }
 

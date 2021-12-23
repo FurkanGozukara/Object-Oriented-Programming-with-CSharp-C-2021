@@ -35,41 +35,54 @@ namespace lecture_10_cmd
             TestClass<int> intObj = new TestClass<int>();
 
             //adding integer values into collection
-            intObj.Add(1);
-            intObj.Add(2);
-            intObj.Add(3);     //No boxing
-            intObj.Add(4);
-            intObj.Add(5);
-            intObj.Add(6);
+            //intObj.Add(1);
+            //intObj.Add(2);
+            //intObj.Add(3);     //No boxing
+            //intObj.Add(4);
+            //intObj.Add(5);
+            //intObj.Add(6);
 
-            int irIndex = 0;
-            while (true)
-            {
-                if (irIndex >= intObj.lenght)
-                    break;
-                    Console.WriteLine(intObj[irIndex]);
-                irIndex++;
-            }
+            intObj.addMultiParams(1, 2, 3, 4, 5, 6);
+
+            intObj.printToScreen();
 
             TestClass<double> dblObj = new TestClass<double>();
 
-            dblObj.Add(1.32);
-            dblObj.Add(2.24);
-            dblObj.Add(3.44);     //No boxing
-            dblObj.Add(4.45);
-            dblObj.Add(5.567);
-            dblObj.Add(632.12);
+            //dblObj.Add(1.32);
+            //dblObj.Add(2.24);
+            //dblObj.Add(3.44);     //No boxing
+            //dblObj.Add(4.45);
+            //dblObj.Add(5.567);
+            //dblObj.Add(632.12);
 
-            irIndex = 0;
-            while (true)
+            dblObj.addMultiParams(32.123, 4435.123, 4323.34, 43511.334, 3243.324, 12345.43, 234532.3234);
+
+            dblObj.printToScreen();
+
+            DataStore<Employee> myDataStore = new DataStore<Employee>();
+
+            //DataStore<int> myintStore = new DataStore<int>();
+
+            TestClass<int> intObj2 = new TestClass<int>();
+
+            intObj2.addMultiParams(3, 4, 5, 6, 12, 14);
+
+            if (intObj.CompareTo(intObj2))
             {
-                if (irIndex >= dblObj.lenght)
-                    break;
-                Console.WriteLine(dblObj[irIndex]);
-                irIndex++;
+                Console.WriteLine("obj1 and obj2 are equal");
             }
+            else
+                Console.WriteLine("obj1 and obj2 are not equal");
 
+            TestClass<int> intObj3 = new TestClass<int>();
+            intObj3.addMultiParams(1, 2, 3, 4, 5, 6);
 
+            if (intObj.CompareTo(intObj3))
+            {
+                Console.WriteLine("obj1 and obj3 are equal");
+            }
+            else
+                Console.WriteLine("obj1 and obj3 are not equal");
         }
 
         public sealed class cars
@@ -122,8 +135,54 @@ namespace lecture_10_cmd
         }
 
 
-        public class TestClass<T>
+        public class TestClass<T> where T : System.IComparable<T>
         {
+            public bool CompareTo(TestClass<T> other)
+            {
+                bool blEqual = true;
+                if (this.obj.Length == other.lenght)
+                {
+                    for (int i = 0; i < this.obj.Length; i++)
+                    {
+                        if (!this.obj[i].Equals(other[i]))
+                        {
+                            blEqual = false;
+                        }
+                    }
+                    return blEqual;
+                }
+                return false;
+            }
+
+            public T MyProperty { get; set; }
+
+            public T fieldT;
+
+            public T returnValues()
+            {
+                return MyProperty;
+            }
+
+            public void addMultiParams(params T[] parameters)
+            {
+                foreach (var vrItem in parameters)
+                {
+                    Add(vrItem);
+                }
+            }
+
+            public void printToScreen()
+            {
+                int irIndex = 0;
+                while (true)
+                {
+                    if (irIndex >= obj.Length)
+                        break;
+                    Console.WriteLine(obj[irIndex]);
+                    irIndex++;
+                }
+            }
+
             // define an Array of Generic type with length 5
             T[] obj = new T[5];
             int count = 0;
@@ -147,6 +206,18 @@ namespace lecture_10_cmd
             }
 
             public int lenght { get { return obj.Length; } }
+        }
+
+        public class Employee
+        {
+            public Employee(string name, int id) => (Name, ID) = (name, id);
+            public string Name { get; set; }
+            public int ID { get; set; }
+        }
+
+        class DataStore<T> where T : class
+        {
+            public T Data { get; set; }
         }
     }
 }

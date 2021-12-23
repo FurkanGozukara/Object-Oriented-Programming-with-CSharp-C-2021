@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace lecture_10_cmd
 {
@@ -57,6 +59,8 @@ namespace lecture_10_cmd
 
             dblObj.addMultiParams(32.123, 4435.123, 4323.34, 43511.334, 3243.324, 12345.43, 234532.3234);
 
+            Console.WriteLine("dblObj to string: " + dblObj.ToString());
+
             dblObj.printToScreen();
 
             DataStore<Employee> myDataStore = new DataStore<Employee>();
@@ -83,6 +87,9 @@ namespace lecture_10_cmd
             }
             else
                 Console.WriteLine("obj1 and obj3 are not equal");
+
+            //   SuperKeyType<string, int, int> wontwork = new SuperKeyType<string, int, int>();
+            SuperKeyType<int, List<string>, int> thisWorks = new SuperKeyType<int, List<string>, int>();//this works
         }
 
         public sealed class cars
@@ -135,8 +142,44 @@ namespace lecture_10_cmd
         }
 
 
-        public class TestClass<T> where T : System.IComparable<T>
+        class SuperKeyType<K, V, U>
+            where K : struct  // constraint
+    where U : System.IComparable<U> // constraint
+    where V : class, new()  // constraint
+        { }
+
+        public class testClass<T>
+            where T : struct
         {
+            public T testMetod(T data)
+            {
+                return data;
+            }
+        }
+
+        public class TestClass<T> where T : System.IComparable<T>, System.IEquatable<T>
+        {
+            public override string ToString()
+            {
+                return string.Join(" | ", this.obj);
+
+                //return string.Join(" | ", this.obj.Select(pr => pr.ToString()));
+            }
+
+            public static bool operator >(TestClass<T> operand1, TestClass<T> operand2)
+            {
+                if (operand1.lenght > operand2.lenght)
+                    return true;
+                else return false;
+            }
+
+            public static bool operator <(TestClass<T> operand1, TestClass<T> operand2)
+            {
+                if (operand1.lenght < operand2.lenght)
+                    return true;
+                else return false;
+            }
+
             public bool CompareTo(TestClass<T> other)
             {
                 bool blEqual = true;

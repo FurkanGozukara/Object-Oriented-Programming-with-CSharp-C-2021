@@ -6,7 +6,7 @@ namespace lecture_11
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main2(string[] args)
         {
             Employee firstEmployee = new Employee(1, "furkan", 100);
            

@@ -46,7 +46,7 @@ namespace lecture_11_wpf
 
             if (string.IsNullOrEmpty(srMsg))
             {
-                srMsg = e.Message + "\r\n\r\nStack\r\n" + e.StackTrace;
+                srMsg = e.Message + "\r\n\r\nStack\r\n" + e.StackTra;
             }//update
 
             srMsg += $"\r\n\r\n****{srWhichHandle}*****\r\n\r\n";

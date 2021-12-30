@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 
 namespace lecture_11_v2
 {
     class Program
     {
+        public static Program myProgam = new Program();
+     
+
         delegate int NumberChanger(int n);//signature is taking single integer and returning integer
         static int num = 10;
 
@@ -107,7 +111,7 @@ namespace lecture_11_v2
             Action showMethod = testName.DisplayToConsole;
             showMethod();
 
-            Func<int, long, double> sum = delegate (int a, long b) { return Convert.ToDouble( a + b); };//anonymous  method
+            Func<int, long, double> sum = delegate (int a, long b) { return Convert.ToDouble(a + b); };//anonymous  method
             //https://www.tutorialsteacher.com/csharp/csharp-anonymous-method
             //https://docs.microsoft.com/tr-tr/dotnet/csharp/programming-guide/statements-expressions-operators/anonymous-functions
             //https://docs.microsoft.com/en-us/dotnet/api/system.action-4?view=net-5.0
@@ -170,10 +174,34 @@ namespace lecture_11_v2
 
             //Func<int, double> selector = str => Convert.ToDouble(str);//this wont work even though their signature is different
 
-            Console.ReadKey();
+            Console.WriteLine("enter your desired method name");
+            var vrMethodName = Console.ReadLine();
+
+            myProgam.callDynamicMethod(vrMethodName);
+
         }
 
-         
-       
+        private void callDynamicMethod(string srMethodName)
+        {
+
+            //Get the method information using the method info class
+            MethodInfo mi = this.GetType().GetMethod(srMethodName, BindingFlags.Public   | BindingFlags.NonPublic | BindingFlags.Instance);
+
+            //Invoke the method
+            // (null- no parameter for the method call
+            // or you can pass the array of parameters...)
+            mi.Invoke(this, null);
+        }
+
+        public void method1()
+        {
+            Console.WriteLine("method 1");
+        }
+
+        private void method2()
+        {
+            Console.WriteLine("method 2");
+        }
+
     }
 }

@@ -157,6 +157,11 @@ namespace lecture_10_cmd
             }
         }
 
+        public class myArray<T> : List<T>
+        {
+           
+        }
+
         public class TestClass<T> where T : System.IComparable<T>, System.IEquatable<T>
         {
             public override string ToString()

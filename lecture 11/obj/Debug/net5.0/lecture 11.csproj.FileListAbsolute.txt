@@ -1,0 +1,16 @@
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 11\bin\Debug\net5.0\lecture 11.exe
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 11\bin\Debug\net5.0\lecture 11.deps.json
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 11\bin\Debug\net5.0\lecture 11.runtimeconfig.json
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 11\bin\Debug\net5.0\lecture 11.runtimeconfig.dev.json
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 11\bin\Debug\net5.0\lecture 11.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 11\bin\Debug\net5.0\ref\lecture 11.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 11\bin\Debug\net5.0\lecture 11.pdb
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 11\obj\Debug\net5.0\lecture 11.csproj.AssemblyReference.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 11\obj\Debug\net5.0\lecture 11.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 11\obj\Debug\net5.0\lecture 11.AssemblyInfoInputs.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 11\obj\Debug\net5.0\lecture 11.AssemblyInfo.cs
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 11\obj\Debug\net5.0\lecture 11.csproj.CoreCompileInputs.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 11\obj\Debug\net5.0\lecture 11.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 11\obj\Debug\net5.0\ref\lecture 11.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 11\obj\Debug\net5.0\lecture 11.pdb
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 11\obj\Debug\net5.0\lecture 11.genruntimeconfig.cache

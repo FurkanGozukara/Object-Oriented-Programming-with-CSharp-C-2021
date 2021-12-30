@@ -1,0 +1,18 @@
+﻿<Window x:Class="lecture_11_wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lecture_11_wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="main thread unhandled exception" Name="btnMainthreadEx"  HorizontalAlignment="Left" Margin="70,51,0,0" VerticalAlignment="Top" Height="52" Width="213" Click="btnMainthreadEx_Click"/>
+        <Button Content="task unhandled exception" Name="taskUnhandled" HorizontalAlignment="Left" Margin="316,51,0,0" VerticalAlignment="Top" Height="46" Width="143" Click="taskUnhandled_Click"/>
+        <Button Content="thread un hadled exception" Name="threadExceptionn" HorizontalAlignment="Left" Margin="70,144,0,0" VerticalAlignment="Top" Height="57" Width="158" Click="threadExceptionn_Click"/>
+        <Button Content="dispatcher begin invoke" Name="btnDispatcherBeginInvoke" HorizontalAlignment="Left" Margin="275,144,0,0" VerticalAlignment="Top" Height="57" Width="184" Click="btnDispatcherBeginInvoke_Click"/>
+        <Button Content="inside task - dispatcher unhandled exception" Name="TaskDispatcher" HorizontalAlignment="Left" Margin="83,246,0,0" VerticalAlignment="Top" Height="46" Width="254" Click="TaskDispatcher_Click"/>
+        <Button Content="inside thread - dispatcher unhandled exception" x:Name="ThreadDisatcer_Copy" HorizontalAlignment="Left" Margin="83,313,0,0" VerticalAlignment="Top" Height="46" Width="254"  Click="ThreadDisatcer_Copy_Click"/>
+
+    </Grid>
+</Window>

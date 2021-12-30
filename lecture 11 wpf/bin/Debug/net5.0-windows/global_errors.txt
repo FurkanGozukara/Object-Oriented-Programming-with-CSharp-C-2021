@@ -1,0 +1,19 @@
+Input string was not in a correct format.
+
+Stack
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+
+****FirstChanceExceptionEventArgs*****
+
+Input string was not in a correct format.
+
+Stack
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseInt32(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at lecture_11_wpf.MainWindow.<>c.<dispatcherERror>b__6_0() in C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 11 wpf\MainWindow.xaml.cs:line 66
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+
+****DispatcherUnhandledExceptionEventHandler*****
+

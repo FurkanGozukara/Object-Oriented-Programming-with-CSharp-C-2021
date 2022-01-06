@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace lecture_12_wpf
 {
@@ -27,17 +28,16 @@ namespace lecture_12_wpf
             InitializeComponent();
         }
 
+        private static System.Threading.Timer sysTimer;
+
         private void btnStart10Task_Click(object sender, RoutedEventArgs e)
         {
             Debug.WriteLine($"{Thread.CurrentThread.ManagedThreadId}");
 
-            Task.Factory.StartNew(() =>
-            {
-                var dispatcherTimer = new System.Windows.Threading.DispatcherTimer();
-                dispatcherTimer.Tick += new EventHandler(dispatcherTimer_Tick);
-                dispatcherTimer.Interval = new TimeSpan(0, 0, 1);
-                dispatcherTimer.Start();
-            });
+
+            sysTimer = new System.Threading.Timer
+            (threadTimer, null, new TimeSpan(0), new TimeSpan(0, 0, 1));
+
 
         }
 
@@ -45,8 +45,10 @@ namespace lecture_12_wpf
         private static int irMaxTaskCount = 10;
         private static bool blTimerBusy = false;
 
-        private void dispatcherTimer_Tick(object sender, EventArgs e)
+        private void threadTimer(Object state)
         {
+            Debug.WriteLine($"{Thread.CurrentThread.ManagedThreadId}");
+
             if (blTimerBusy == true)
             {
                 return;
@@ -55,7 +57,7 @@ namespace lecture_12_wpf
 
             //this removes completed tasks
             lstTasks = lstTasks.Where(pr => (pr.Status != TaskStatus.RanToCompletion && pr.Status != TaskStatus.Faulted && pr.Status != TaskStatus.Canceled)).ToList();
-            
+
             Random myRand = new Random();
 
 
@@ -70,7 +72,7 @@ namespace lecture_12_wpf
                 {
                     tokenSource.Cancel();
                 }
-             
+
             }
 
             blTimerBusy = false;
@@ -81,7 +83,7 @@ namespace lecture_12_wpf
         {
             Random myRand = new Random();
             int irWait = myRand.Next(1, 10000);
-         
+
             if (myRand.Next(1, 4) == 1)
             {
                 throw new Exception();

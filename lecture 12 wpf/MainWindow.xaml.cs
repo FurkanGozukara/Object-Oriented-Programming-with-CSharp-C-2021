@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -26,6 +27,7 @@ namespace lecture_12_wpf
         public MainWindow()
         {
             InitializeComponent();
+            swLogErrors = new StreamWriter("ErrorLogs.txt");
         }
 
         private static System.Threading.Timer sysTimer;
@@ -36,7 +38,7 @@ namespace lecture_12_wpf
 
 
             sysTimer = new System.Threading.Timer
-            (threadTimer, null, new TimeSpan(0), new TimeSpan(1, 0, 1));
+            (threadTimer, null, new TimeSpan(0), new TimeSpan(0, 0, 1));
 
 
         }
@@ -82,19 +84,38 @@ namespace lecture_12_wpf
             blTimerBusy = false;
 
         }
-
+        //modify this below method to log error happened task ids and the error itself
         private void randomTask(int irNumber, long lrTaskId, CancellationToken ct)
         {
-            Debug.WriteLine("value irnnumber = " + irNumber);
-            Random myRand = new Random();
-            int irWait = myRand.Next(1, 10000);
-
-            if (myRand.Next(1, 40) == 1)
+            try
             {
-                throw new Exception();
+                Debug.WriteLine("value irnnumber = " + irNumber);
+                Random myRand = new Random();
+                int irWait = myRand.Next(1, 10000);
+
+                if (myRand.Next(1, 40) == 1)
+                {
+                    throw new Exception();
+                }
+                ct.ThrowIfCancellationRequested(); // throw OperationCancelledException if requested
+                System.Threading.Thread.Sleep(irWait);
             }
-            ct.ThrowIfCancellationRequested(); // throw OperationCancelledException if requested
-            System.Threading.Thread.Sleep(irWait);
+            catch (Exception E)
+            {
+                logErrors(E, "task unhandled exception occurd in task global id " + lrTaskId);
+            }
+        
+        }
+
+        private static StreamWriter swLogErrors;
+        private static object lockSwErrors = new object();
+        private static void logErrors(Exception E, string srMsg)
+        {
+            lock(lockSwErrors)
+            {
+                swLogErrors.WriteLine(srMsg + $"\n{E?.Message}\n{E?.InnerException?.Message}\n{E?.StackTrace}\n\n");
+                swLogErrors.Flush();
+            }         
         }
     }
 }

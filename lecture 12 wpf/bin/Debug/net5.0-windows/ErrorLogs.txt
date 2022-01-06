@@ -1,0 +1,66 @@
+task unhandled exception occurd in task global id 1099
+Exception of type 'System.Exception' was thrown.
+
+   at lecture_12_wpf.MainWindow.randomTask(Int32 irNumber, Int64 lrTaskId, CancellationToken ct) in C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\MainWindow.xaml.cs:line 98
+
+
+task unhandled exception occurd in task global id 2299
+Exception of type 'System.Exception' was thrown.
+
+   at lecture_12_wpf.MainWindow.randomTask(Int32 irNumber, Int64 lrTaskId, CancellationToken ct) in C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\MainWindow.xaml.cs:line 98
+
+
+task unhandled exception occurd in task global id 2398
+Exception of type 'System.Exception' was thrown.
+
+   at lecture_12_wpf.MainWindow.randomTask(Int32 irNumber, Int64 lrTaskId, CancellationToken ct) in C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\MainWindow.xaml.cs:line 98
+
+
+task unhandled exception occurd in task global id 3095
+Exception of type 'System.Exception' was thrown.
+
+   at lecture_12_wpf.MainWindow.randomTask(Int32 irNumber, Int64 lrTaskId, CancellationToken ct) in C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\MainWindow.xaml.cs:line 98
+
+
+task unhandled exception occurd in task global id 5100
+Exception of type 'System.Exception' was thrown.
+
+   at lecture_12_wpf.MainWindow.randomTask(Int32 irNumber, Int64 lrTaskId, CancellationToken ct) in C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\MainWindow.xaml.cs:line 98
+
+
+task unhandled exception occurd in task global id 6700
+Exception of type 'System.Exception' was thrown.
+
+   at lecture_12_wpf.MainWindow.randomTask(Int32 irNumber, Int64 lrTaskId, CancellationToken ct) in C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\MainWindow.xaml.cs:line 98
+
+
+task unhandled exception occurd in task global id 6699
+Exception of type 'System.Exception' was thrown.
+
+   at lecture_12_wpf.MainWindow.randomTask(Int32 irNumber, Int64 lrTaskId, CancellationToken ct) in C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\MainWindow.xaml.cs:line 98
+
+
+task unhandled exception occurd in task global id 6197
+Exception of type 'System.Exception' was thrown.
+
+   at lecture_12_wpf.MainWindow.randomTask(Int32 irNumber, Int64 lrTaskId, CancellationToken ct) in C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\MainWindow.xaml.cs:line 98
+
+
+task unhandled exception occurd in task global id 5392
+Exception of type 'System.Exception' was thrown.
+
+   at lecture_12_wpf.MainWindow.randomTask(Int32 irNumber, Int64 lrTaskId, CancellationToken ct) in C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\MainWindow.xaml.cs:line 98
+
+
+task unhandled exception occurd in task global id 7896
+Exception of type 'System.Exception' was thrown.
+
+   at lecture_12_wpf.MainWindow.randomTask(Int32 irNumber, Int64 lrTaskId, CancellationToken ct) in C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\MainWindow.xaml.cs:line 98
+
+
+task unhandled exception occurd in task global id 7694
+Exception of type 'System.Exception' was thrown.
+
+   at lecture_12_wpf.MainWindow.randomTask(Int32 irNumber, Int64 lrTaskId, CancellationToken ct) in C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\MainWindow.xaml.cs:line 98
+
+

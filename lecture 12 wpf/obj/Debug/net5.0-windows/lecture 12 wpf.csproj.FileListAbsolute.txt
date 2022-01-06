@@ -1,0 +1,22 @@
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\bin\Debug\net5.0-windows\lecture 12 wpf.exe
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\bin\Debug\net5.0-windows\lecture 12 wpf.deps.json
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\bin\Debug\net5.0-windows\lecture 12 wpf.runtimeconfig.json
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\bin\Debug\net5.0-windows\lecture 12 wpf.runtimeconfig.dev.json
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\bin\Debug\net5.0-windows\lecture 12 wpf.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\bin\Debug\net5.0-windows\ref\lecture 12 wpf.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\bin\Debug\net5.0-windows\lecture 12 wpf.pdb
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\obj\Debug\net5.0-windows\lecture 12 wpf.csproj.AssemblyReference.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\obj\Debug\net5.0-windows\MainWindow.g.cs
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\obj\Debug\net5.0-windows\App.g.cs
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\obj\Debug\net5.0-windows\lecture 12 wpf_MarkupCompile.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\obj\Debug\net5.0-windows\lecture 12 wpf_MarkupCompile.lref
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\obj\Debug\net5.0-windows\MainWindow.baml
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\obj\Debug\net5.0-windows\lecture 12 wpf.g.resources
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\obj\Debug\net5.0-windows\lecture 12 wpf.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\obj\Debug\net5.0-windows\lecture 12 wpf.AssemblyInfoInputs.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\obj\Debug\net5.0-windows\lecture 12 wpf.AssemblyInfo.cs
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\obj\Debug\net5.0-windows\lecture 12 wpf.csproj.CoreCompileInputs.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\obj\Debug\net5.0-windows\lecture 12 wpf.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\obj\Debug\net5.0-windows\ref\lecture 12 wpf.dll
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\obj\Debug\net5.0-windows\lecture 12 wpf.pdb
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\obj\Debug\net5.0-windows\lecture 12 wpf.genruntimeconfig.cache

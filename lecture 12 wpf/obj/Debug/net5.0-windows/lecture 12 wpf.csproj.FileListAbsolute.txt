@@ -5,7 +5,6 @@ C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\bin\Debug
 C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\bin\Debug\net5.0-windows\lecture 12 wpf.dll
 C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\bin\Debug\net5.0-windows\ref\lecture 12 wpf.dll
 C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\bin\Debug\net5.0-windows\lecture 12 wpf.pdb
-C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\obj\Debug\net5.0-windows\lecture 12 wpf.csproj.AssemblyReference.cache
 C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\obj\Debug\net5.0-windows\MainWindow.g.cs
 C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\obj\Debug\net5.0-windows\App.g.cs
 C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\obj\Debug\net5.0-windows\lecture 12 wpf_MarkupCompile.cache
@@ -20,3 +19,4 @@ C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\obj\Debug
 C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\obj\Debug\net5.0-windows\ref\lecture 12 wpf.dll
 C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\obj\Debug\net5.0-windows\lecture 12 wpf.pdb
 C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\obj\Debug\net5.0-windows\lecture 12 wpf.genruntimeconfig.cache
+C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\obj\Debug\net5.0-windows\lecture 12 wpf.csproj.AssemblyReference.cache

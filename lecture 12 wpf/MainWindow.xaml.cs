@@ -28,7 +28,7 @@ namespace lecture_12_wpf
         {
             InitializeComponent();
             swLogErrors = new StreamWriter("ErrorLogs.txt");
-            for (int i = 0; i < 7; i++)
+            for (int i = 0; i < 8; i++)
             {
                 lstBoxStatus.Items.Add("");
             }
@@ -46,7 +46,7 @@ namespace lecture_12_wpf
 
             var dispatcherTimer = new System.Windows.Threading.DispatcherTimer();
             dispatcherTimer.Tick += new EventHandler(dispatcherTimer_Tick);
-            dispatcherTimer.Interval = new TimeSpan(0, 0, 1);
+            dispatcherTimer.Interval = new TimeSpan(0, 0, 0, 0, 1);
             dispatcherTimer.Start();
         }
 
@@ -80,6 +80,10 @@ namespace lecture_12_wpf
             {
                 lstBoxStatus.Items[6] = $"Number of RanToCompletion tasks: {lstTasks.Where(pr => pr.Status == TaskStatus.RanToCompletion).Count<Task>()}";
             }));
+            Dispatcher.BeginInvoke((Action)(() =>
+            {
+                lstBoxStatus.Items[7] = DateTime.Now.ToString("mm-ss-fff");
+            }));
         }
 
         private static List<Task> lstTasks = new List<Task>();
@@ -110,8 +114,9 @@ namespace lecture_12_wpf
                 var token = tokenSource.Token;
                 var local_i_CopyForDataRacingProblem = i;//this prevents i to be shared among different tasks and prevents data racing problem
                 var localTaskId = Interlocked.Read(ref irTaskId);
-                Task.Factory.StartNew(() => randomTask(local_i_CopyForDataRacingProblem, localTaskId, token), token).ContinueWith(t => { Debug.WriteLine($"task error happened : {t.Id} + \t " + t.Exception); },
-        TaskContinuationOptions.OnlyOnFaulted).ContinueWith(t => { Debug.WriteLine($"task completed: {t.Id}"); });
+                var vrTask = Task.Factory.StartNew(() => randomTask(local_i_CopyForDataRacingProblem, localTaskId, token), token).ContinueWith(t => { Debug.WriteLine($"task error happened : {t.Id} + \t " + t.Exception); },
+          TaskContinuationOptions.OnlyOnFaulted).ContinueWith(t => { Debug.WriteLine($"task completed: {t.Id}"); });
+                lstTasks.Add(vrTask);
 
                 if (myRand.Next(1, 40) == 1)
                 {
@@ -130,7 +135,7 @@ namespace lecture_12_wpf
             {
                 Debug.WriteLine("value irnnumber = " + irNumber);
                 Random myRand = new Random();
-                int irWait = myRand.Next(1, 10000);
+                int irWait = myRand.Next(1000, 100000);
 
                 if (myRand.Next(1, 40) == 1)
                 {

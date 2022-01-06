@@ -1,12 +1,12 @@
-task unhandled exception occurd in task global id 2400
+task unhandled exception occurd in task global id 102
 Exception of type 'System.Exception' was thrown.
 
-   at lecture_12_wpf.MainWindow.randomTask(Int32 irNumber, Int64 lrTaskId, CancellationToken ct) in C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\MainWindow.xaml.cs:line 137
+   at lecture_12_wpf.MainWindow.randomTask(Int32 irNumber, Int64 lrTaskId, CancellationToken ct) in C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\MainWindow.xaml.cs:line 142
 
 
-task unhandled exception occurd in task global id 2499
+task unhandled exception occurd in task global id 25
 Exception of type 'System.Exception' was thrown.
 
-   at lecture_12_wpf.MainWindow.randomTask(Int32 irNumber, Int64 lrTaskId, CancellationToken ct) in C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\MainWindow.xaml.cs:line 137
+   at lecture_12_wpf.MainWindow.randomTask(Int32 irNumber, Int64 lrTaskId, CancellationToken ct) in C:\Users\Furkan Gözükara\Desktop\2021 object oriented\lecture 12 wpf\MainWindow.xaml.cs:line 142
 
 

@@ -28,6 +28,10 @@ namespace lecture_12_wpf
         {
             InitializeComponent();
             swLogErrors = new StreamWriter("ErrorLogs.txt");
+            for (int i = 0; i < 7; i++)
+            {
+                lstBoxStatus.Items.Add("");
+            }
         }
 
         private static System.Threading.Timer sysTimer;
@@ -40,7 +44,42 @@ namespace lecture_12_wpf
             sysTimer = new System.Threading.Timer
             (threadTimer, null, new TimeSpan(0), new TimeSpan(0, 0, 1));
 
+            var dispatcherTimer = new System.Windows.Threading.DispatcherTimer();
+            dispatcherTimer.Tick += new EventHandler(dispatcherTimer_Tick);
+            dispatcherTimer.Interval = new TimeSpan(0, 0, 1);
+            dispatcherTimer.Start();
+        }
 
+        private void dispatcherTimer_Tick(object sender, EventArgs e)
+        {
+            Dispatcher.BeginInvoke((Action)(() =>
+            {
+                lstBoxStatus.Items[0] = $"Number of Created tasks: {lstTasks.Where(pr => pr.Status == TaskStatus.Created).Count<Task>()}";
+            }));
+            Dispatcher.BeginInvoke((Action)(() =>
+            {
+                lstBoxStatus.Items[1] = $"Number of WaitingForActivation tasks: {lstTasks.Where(pr => pr.Status == TaskStatus.WaitingForActivation).Count<Task>()}";
+            }));
+            Dispatcher.BeginInvoke((Action)(() =>
+            {
+                lstBoxStatus.Items[2] = $"Number of WaitingToRun tasks: {lstTasks.Where(pr => pr.Status == TaskStatus.WaitingToRun).Count<Task>()}";
+            }));
+            Dispatcher.BeginInvoke((Action)(() =>
+            {
+                lstBoxStatus.Items[3] = $"Number of Running tasks: {lstTasks.Where(pr => pr.Status == TaskStatus.Running).Count<Task>()}";
+            }));
+            Dispatcher.BeginInvoke((Action)(() =>
+            {
+                lstBoxStatus.Items[4] = $"Number of Canceled tasks: {lstTasks.Where(pr => pr.Status == TaskStatus.Canceled).Count<Task>()}";
+            }));
+            Dispatcher.BeginInvoke((Action)(() =>
+            {
+                lstBoxStatus.Items[5] = $"Number of Faulted tasks: {lstTasks.Where(pr => pr.Status == TaskStatus.Faulted).Count<Task>()}";
+            }));
+            Dispatcher.BeginInvoke((Action)(() =>
+            {
+                lstBoxStatus.Items[6] = $"Number of RanToCompletion tasks: {lstTasks.Where(pr => pr.Status == TaskStatus.RanToCompletion).Count<Task>()}";
+            }));
         }
 
         private static List<Task> lstTasks = new List<Task>();
@@ -104,18 +143,18 @@ namespace lecture_12_wpf
             {
                 logErrors(E, "task unhandled exception occurd in task global id " + lrTaskId);
             }
-        
+
         }
 
         private static StreamWriter swLogErrors;
         private static object lockSwErrors = new object();
         private static void logErrors(Exception E, string srMsg)
         {
-            lock(lockSwErrors)
+            lock (lockSwErrors)
             {
                 swLogErrors.WriteLine(srMsg + $"\n{E?.Message}\n{E?.InnerException?.Message}\n{E?.StackTrace}\n\n");
                 swLogErrors.Flush();
-            }         
+            }
         }
     }
 }

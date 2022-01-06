@@ -8,6 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Button Name="btnStart10Task" Content="start 10 task" HorizontalAlignment="Left" Margin="24,24,0,0" VerticalAlignment="Top" Height="58" Width="155" Click="btnStart10Task_Click"/>
+        <ListBox x:Name="lstBoxStatus" Margin="216,24,63,49"/>
 
     </Grid>
 </Window>

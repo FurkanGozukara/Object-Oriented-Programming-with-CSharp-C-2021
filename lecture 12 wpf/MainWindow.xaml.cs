@@ -36,14 +36,15 @@ namespace lecture_12_wpf
 
 
             sysTimer = new System.Threading.Timer
-            (threadTimer, null, new TimeSpan(0), new TimeSpan(0, 0, 1));
+            (threadTimer, null, new TimeSpan(0), new TimeSpan(1, 0, 1));
 
 
         }
 
         private static List<Task> lstTasks = new List<Task>();
-        private static int irMaxTaskCount = 10;
+        private static int irMaxTaskCount = 100;
         private static bool blTimerBusy = false;
+        private static long irTaskId = 0;
 
         private void threadTimer(Object state)
         {
@@ -63,12 +64,15 @@ namespace lecture_12_wpf
 
             for (int i = 0; i < irMaxTaskCount - lstTasks.Count; i++)
             {
+                Interlocked.Increment(ref irTaskId);
                 var tokenSource = new CancellationTokenSource();
                 var token = tokenSource.Token;
+                var local_i_CopyForDataRacingProblem = i;//this prevents i to be shared among different tasks and prevents data racing problem
+                var localTaskId = Interlocked.Read(ref irTaskId);
+                Task.Factory.StartNew(() => randomTask(local_i_CopyForDataRacingProblem, localTaskId, token), token).ContinueWith(t => { Debug.WriteLine($"task error happened : {t.Id} + \t " + t.Exception); },
+        TaskContinuationOptions.OnlyOnFaulted).ContinueWith(t => { Debug.WriteLine($"task completed: {t.Id}"); });
 
-                Task.Factory.StartNew(() => randomTask(token), token);
-
-                if (myRand.Next(1, 4) == 1)
+                if (myRand.Next(1, 40) == 1)
                 {
                     tokenSource.Cancel();
                 }
@@ -79,12 +83,13 @@ namespace lecture_12_wpf
 
         }
 
-        private void randomTask(CancellationToken ct)
+        private void randomTask(int irNumber, long lrTaskId, CancellationToken ct)
         {
+            Debug.WriteLine("value irnnumber = " + irNumber);
             Random myRand = new Random();
             int irWait = myRand.Next(1, 10000);
 
-            if (myRand.Next(1, 4) == 1)
+            if (myRand.Next(1, 40) == 1)
             {
                 throw new Exception();
             }
